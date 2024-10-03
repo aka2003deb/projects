@@ -6,8 +6,8 @@ The code for achieving this is shown below:*/
 Servo servo[4];
 const byte servoPin[4]={2,3,4,5};
 void setup(){
-Serial.begin(9600); for(int
-i=0;i<4;i++){
+Serial.begin(9600); 
+for(int i=0;i<4;i++){
 servo[i].attach(servoPin[i]);
 servo[i].write(90); delay(1000);
 }
